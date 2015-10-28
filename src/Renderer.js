@@ -28,10 +28,6 @@ void main()\n\
 	this.m_FlatShader = new Shader();
 	this.m_FlatShader.load(gl.VERTEX_SHADER, vs);
 	this.m_FlatShader.load(gl.FRAGMENT_SHADER, fs);
-
-	this.vsattr = 0;
-	gl.bindAttribLocation(this.m_FlatShader.m_Program, this.vsattr, "aVertexPosition");
-
 	this.m_FlatShader.link();
 
 	gl.clearColor(0.25, 0.5, 0.72, 1.0);
